@@ -1,18 +1,25 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 
-import {SearchMovies} from "../SearchMovies/SearchMovies";
+import css from "./Header.module.css"
+import {NavLink} from "react-router-dom";
+import {Genres} from "../Genres/Genres";
+
 
 const Header = () => {
+
     return (
-        <div>
+        <div className={css.Container}>
+            <div className={css.block}>
+                <h3>media</h3>
+                <NavLink to='/movies'>
+                    <div className={css.Menu}>Movies</div>
+                </NavLink>
+            </div>
 
-            <NavLink to={'genre'}>Genre</NavLink>
-            <NavLink to={'Country'}>Country</NavLink>
-            <NavLink to={'tv'}>TV</NavLink>
-            <NavLink to={'Anime'}>Anime</NavLink>
-            <SearchMovies/>
-
+            <div className={css.block}>
+                <h3>genres</h3>
+                <Genres/>
+            </div>
         </div>
     );
 };

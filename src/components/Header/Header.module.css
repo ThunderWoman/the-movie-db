@@ -1,10 +1,37 @@
-.mainContainer {
-    width: 100%;
+.Container {
+    width: 20%;
+    background-color: steelblue;
+    position: relative;
+    border-radius: 5px 0 0 5px;
     height: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
+    box-shadow: grey;
+    box-sizing: border-box;
 }
-.mainContainer.dark{
-    background-color: black;
-    color: white;
+
+.Header {
+    width: 100%;
+    height: 20%;
+    background-color: steelblue;
+}
+
+.Header > a {
+    text-align: center;
+    text-decoration: black;
+    width: 50px;
+    height: 40px;
+}
+
+.block {
+    min-height: 80px;
+
+}
+
+.Menu {
+    width: 100%;
+    padding: 8px 40px;
+}
+
+.Menu:hover {
+    cursor: pointer;
+    background-color: grey;
 }

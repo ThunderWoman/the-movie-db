@@ -1,34 +1,40 @@
-.container{
+.container {
     width: 22%;
     box-shadow: 0 0 2px black;
     border-radius: 3px;
     margin: 10px;
 }
-.container:hover{
+
+.container:hover {
     box-shadow: 0 0 5px black;
 }
-.uyuyu{
+
+.video {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px 0;
 }
-.container img{
+
+.container img {
     display: block;
     width: 200px;
 }
-.flex{
+
+.flex {
     height: 100%;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.title{
+
+.title {
     padding-top: 5px;
     width: 75%;
 }
-.container a{
+
+.container a {
     text-decoration: none;
 }

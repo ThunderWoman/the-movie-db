@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import {getGenres} from "../../store";
+import {getAllGenres} from "../../store";
 import {GenreBadge} from "../GenreBadge/GenreBadge";
 
 const Genres = () => {
@@ -10,12 +10,12 @@ const Genres = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getGenres())
+        dispatch(getAllGenres())
     }, [dispatch])
 
     return (
         <div>
-            {genres && <div>{genres.map(genre => <GenreBadge key = {genre.id} genre={genre}/>)}</div>}
+            {genres && <div>{genres.map(genre => <GenreBadge key={genre.id} genre={genre}/>)}</div>}
         </div>
     );
 };

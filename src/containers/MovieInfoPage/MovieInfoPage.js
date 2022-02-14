@@ -26,8 +26,8 @@ const MovieInfoPage = () => {
     return (
         <div>
             <button className={css.buttonBack} onClick={back}>Back</button>
-            <div className={css.MovieDetailsPage}>
-                <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt=""/>
+            <div className={css.MovieInfoPage}>
+                <img src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt={movie.title}/>
                 <div className={css.column}>
                     <h2>{title}</h2>
                     <div>release date: {release_date}</div>

@@ -3,10 +3,10 @@ import {useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 import css from "./GenresPage.module.css";
-import {getMoviesByGenre} from "../../store";
+import {getGenreMovies} from "../../store";
 import {MoviesGenre} from "../../components";
 
-const MoviesByGenrePage = () => {
+const GenresPage = () => {
 
     const {id} = useParams();
 
@@ -20,7 +20,7 @@ const MoviesByGenrePage = () => {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
-        dispatch(getMoviesByGenre({id, page}));
+        dispatch(getGenreMovies({id, page}));
     }, [dispatch, id, page])
 
     const forward = () => {
@@ -51,4 +51,4 @@ const MoviesByGenrePage = () => {
     );
 };
 
-export {MoviesByGenrePage};
+export {GenresPage};

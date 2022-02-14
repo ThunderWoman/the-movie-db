@@ -1,31 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    background-image: url("https://images.wallpaperscraft.ru/image/single/poligon_treugolniki_geometricheskij_128478_1920x1080.jpg");
+    background-color: steelblue;
     min-height: 100vh;
     height: 100%;
 }
+
 .flex{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#main[data-theme="dark"]{
-    background-color: black;
-    color: white;
-}
-#main[data-theme="dark"] a{
-    color: white;
-}
-#main[data-theme="light"]{
-    background-color: white;
-    color: black;
 }

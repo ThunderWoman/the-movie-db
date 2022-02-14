@@ -5,7 +5,7 @@ import css from "./MoviesPage.module.css";
 import {getAllMovies} from "../../store";
 import {MoviesListCard} from "../../components";
 
-const MoviesListPage = () => {
+const MoviesPage = () => {
 
     const [page, setPage] = useState(1);
 
@@ -49,4 +49,4 @@ const MoviesListPage = () => {
     );
 };
 
-export {MoviesListPage};
+export {MoviesPage};

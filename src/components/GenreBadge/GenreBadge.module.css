@@ -1,8 +1,9 @@
-.leftMenuLink{
+.GenreBadge {
     width: 100%;
     padding: 8px 40px;
 }
-.leftMenuLink:hover{
+
+.GenreBadge:hover {
     cursor: pointer;
     background-color: rgba(169, 168, 168, 0.15);
 }

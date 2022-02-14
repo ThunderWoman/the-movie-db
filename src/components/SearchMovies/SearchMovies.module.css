@@ -1,34 +1,30 @@
-.container{
-    width: 22%;
-    box-shadow: 0 0 2px black;
-    border-radius: 3px;
-    margin: 10px;
-}
-.container:hover{
-    box-shadow: 0 0 5px black;
-}
-.uyuyu{
-    height: 100%;
+.search {
+    height: 40px;
+    padding: 0 25px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 5px 0;
+    justify-content: space-around;
+    border-bottom: 1px solid silver;
 }
-.container img{
-    display: block;
-    width: 200px;
+
+.Badge {
+    width: 80%;
 }
-.flex{
-    height: 100%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.Input {
+    padding: 3px 7px;
 }
-.title{
-    padding-top: 5px;
-    width: 75%;
+
+.Input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
 }
-.container a{
+
+.Button {
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.Button a {
     text-decoration: none;
 }

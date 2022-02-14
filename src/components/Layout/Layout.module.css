@@ -1,0 +1,13 @@
+.Layout {
+    width: 1200px;
+    height: 95vh;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+}
