@@ -7,8 +7,7 @@ import {SearchMovie} from "../../components";
 const MovieSearchPage = () => {
 
     const {search} = useSelector(state => state.movies);
-
-    const searchMovies = search.results
+    const searchMovies = search.results;
 
     return (
         <div>
@@ -18,4 +17,5 @@ const MovieSearchPage = () => {
         </div>
     );
 };
+
 export {MovieSearchPage};

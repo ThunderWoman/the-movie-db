@@ -1,14 +1,16 @@
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.button{
+
+.button {
     padding: 5px 15px;
     cursor: pointer;
 }
-.buttonFlex{
+
+.buttonFlex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,9 +18,10 @@
     column-gap: 25px;
 }
 
-.title{
+.title {
     padding: 10px 0 10px 15px;
 }
-.page{
+
+.page {
     padding: 0 15px;
 }

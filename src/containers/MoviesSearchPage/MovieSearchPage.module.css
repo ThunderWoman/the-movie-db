@@ -1,14 +1,16 @@
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.buttonFlex{
+
+.buttonFlex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.title{
+
+.title {
     padding: 10px 0 10px 15px;
 }

@@ -13,13 +13,13 @@ const MoviesPage = () => {
 
     const {movies} = useSelector(state => state.movies);
 
-    const xxx = movies.results
-    const pages = movies.page
-    const pagesAll = movies.total_pages
+    const results = movies.results;
+    const pages = movies.page;
+    const pagesAll = movies.total_pages;
 
     useEffect(() => {
         dispatch(getAllMovies(page));
-    }, [dispatch, page])
+    }, [dispatch, page]);
 
     const forward = () => {
         if (page < 510) {
@@ -31,21 +31,22 @@ const MoviesPage = () => {
         if (page > 1) {
             setPage(page - 1);
         }
-
     };
 
     return (
 
-        <>
+        <div>
             <h3 className={css.title}>All movies</h3>
-            {xxx && <div className={css.flex}>{movies.results.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)}</div>}
+            {results && <div className={css.flex}>{movies.results.map(movie => <MoviesListCard key={movie.id}
+                                                                                           movie={movie}/>)}</div>}
             <div className={css.buttonFlex}>
-                <button className={css.button} onClick={back}>back</button>
-                <div className={css.flex}> <div className={css.page}>{pages}</div>  of  <div className={css.page}>{pagesAll}</div> </div>
-                <button className={css.button} onClick={forward}>forward</button>
+                <button className={css.button} onClick={back}>Back</button>
+                <div className={css.flex}>
+                    <div className={css.page}>{pages}</div>
+                    of <div className={css.page}>{pagesAll}</div></div>
+                <button className={css.button} onClick={forward}>Go</button>
             </div>
-        </>
-
+        </div>
     );
 };
 

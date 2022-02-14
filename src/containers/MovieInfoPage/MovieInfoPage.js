@@ -8,20 +8,19 @@ import css from "./MovieInfoPage.module.css";
 const MovieInfoPage = () => {
 
     const {id} = useParams();
-
     const {movie} = useSelector(state => state.movies);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(getByIdMovie(id));
-    }, [dispatch, id])
+    }, [dispatch, id]);
 
-    const {poster_path, title, release_date, overview, vote_average, budget} = movie
+    const {poster_path, title, release_date, overview, vote_average, budget} = movie;
 
     const navigate = useNavigate()
     const back = () => {
-        navigate(-1)
-    }
+        navigate(-1);
+    };
 
     return (
         <div>
@@ -38,8 +37,7 @@ const MovieInfoPage = () => {
             </div>
         </div>
 
-    )
-        ;
+    );
 };
 
 export {MovieInfoPage};
