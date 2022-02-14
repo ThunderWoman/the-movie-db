@@ -1,7 +1,7 @@
 import React from "react";
 import {useSelector} from "react-redux";
 
-import css from "./SearchMovies.module.css"
+import css from "./MovieSearchPage.module.css";
 import {SearchMovie} from "../../components";
 
 const MovieSearchPage = () => {

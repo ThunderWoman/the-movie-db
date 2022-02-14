@@ -3,7 +3,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 import {getByIdMovie} from "../../store";
-import css from "./MovieDetails.module.css"
+import css from "./MovieInfoPage.module.css";
 
 const MovieInfoPage = () => {
 

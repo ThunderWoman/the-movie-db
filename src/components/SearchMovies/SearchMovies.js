@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 
 import {getBySearch} from "../../store";
-import css from "./Search.module.css"
+import css from "./SearchMovies.module.css";
 
 const SearchMovies = () => {
 

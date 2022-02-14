@@ -8,20 +8,26 @@ const initialState = {
 }
 
 export const getAllMovies = createAsyncThunk(
-    'movies/getAllMovies',
+    'moviesSlice/getAllMovies',
     async (page, {rejectWithValue}) => {
-        const movies = await movieServices.getAll(page);
-        return movies
+        try {
+            return await movieServices.getAll(page);
+        } catch (e) {
+            return rejectWithValue(e.response.data);
+        }
     }
-)
+);
 
 export const getByIdMovie = createAsyncThunk(
-    'movies/getByIdMovie',
+    'moviesSlice/getByIdMovie',
     async (id, {rejectWithValue}) => {
-        const movie = await movieServices.getById(id);
-        return movie
+        try {
+            return await movieServices.getById(id);
+        } catch (e) {
+            return rejectWithValue(e.response.data)
+        }
     }
-)
+);
 
 export const getBySearch = createAsyncThunk(
     'movies/getBySearch',
@@ -61,4 +67,4 @@ const movieSlice = createSlice({
 
 const movieReducer = movieSlice.reducer;
 
-export default movieReducer
+export default movieReducer;

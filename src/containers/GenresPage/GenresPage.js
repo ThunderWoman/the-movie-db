@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
-import css from "./MoviesByGenrePage.module.css";
+import css from "./GenresPage.module.css";
 import {getMoviesByGenre} from "../../store";
 import {MoviesGenre} from "../../components";
 

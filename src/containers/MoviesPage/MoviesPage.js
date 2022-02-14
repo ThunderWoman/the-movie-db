@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import css from "./MoviesListPage.module.css"
+import css from "./MoviesPage.module.css";
 import {getAllMovies} from "../../store";
 import {MoviesListCard} from "../../components";
 
