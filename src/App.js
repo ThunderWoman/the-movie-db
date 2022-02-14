@@ -2,7 +2,8 @@ import {Navigate, Route, Routes} from "react-router-dom";
 
 import "./App.css";
 import {Header} from "./components";
-import {MovieInfoPage, MoviesListPage} from "./containers";
+import {MovieInfoPage} from "./containers";
+import {MoviesListPage, MovieSearchPage, MoviesByGenrePage} from "./containers";
 
 
 const App = () => {
@@ -13,6 +14,8 @@ const App = () => {
         <Route index element={<Navigate to={'/movies'}/>}/>
         <Route path={'movies'} element={<MoviesListPage/>}/>
         <Route path={'movies/:id'} element={<MovieInfoPage/>}/>
+        <Route path={'search'} element={<MovieSearchPage/>}/>
+        <Route path={'genres/:id'} element={<MoviesByGenrePage/>}/>
     </Route>
 
 </Routes>
