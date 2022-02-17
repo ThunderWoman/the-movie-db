@@ -38,7 +38,7 @@ const GenresPage = () => {
     return (
         <div>
             <h3 className={css.title}>{genres.genres.map(genre => genre.id === id && genre.name)}</h3>
-            {movies.results &&
+            {results &&
             <div className={css.flex}>{movies.results.map(movie => <MoviesGenre key={movie.id} movie={movie}/>)}</div>}
             <div className={css.buttonFlex}>
                 <button className={css.button} onClick={back}>back</button>

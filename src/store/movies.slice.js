@@ -48,19 +48,19 @@ const movieSlice = createSlice({
             state.movies = action.payload
         },
         [getAllMovies.rejected]: (state, action) => {
-
+            state.movies = action.payload
         },
         [getByIdMovie.fulfilled]: (state, action) => {
             state.movie = action.payload
         },
         [getByIdMovie.rejected]: (state, action) => {
-
+            state.movies = action.payload
         },
         [getBySearch.fulfilled]: (state, action) => {
             state.search = action.payload
         },
         [getBySearch.rejected]: (state, action) => {
-
+            state.movies = action.payload
         },
     }
 });
