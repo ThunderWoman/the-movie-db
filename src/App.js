@@ -2,7 +2,7 @@ import React from "react";
 import {Navigate, Route, Routes} from "react-router-dom";
 
 import "./App.css";
-import {Layout} from "./components";
+import {Layout, MoviesGenre} from "./components";
 import {MovieInfoPage} from "./containers";
 import {MoviesPage, MovieSearchPage, GenresPage} from "./containers";
 
@@ -16,6 +16,7 @@ const App = () => {
                         <Route path={'movies'} element={<MoviesPage/>}/>
                         <Route path={'movies/:id'} element={<MovieInfoPage/>}/>
                         <Route path={'genres/:id'} element={<GenresPage/>}/>
+                        <Route path={'genre/:id'} element={<MoviesGenre/>}/>
                     </Route>
                 </Routes>
         </div>

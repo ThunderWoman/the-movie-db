@@ -20,8 +20,8 @@ const GenresPage = () => {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
-        dispatch(getGenreMovies({id, page}));
-    }, [dispatch, id, page])
+        dispatch(getGenreMovies({page}));
+    }, [dispatch, page])
 
     const forward = () => {
         if (page < 510) {
@@ -39,7 +39,7 @@ const GenresPage = () => {
         <div>
             <h3 className={css.title}>{genres.genres.map(genre => genre.id === id && genre.name)}</h3>
             {results &&
-            <div className={css.flex}>{movies.results.map(movie => <MoviesGenre key={movie.id} movie={movie}/>)}</div>}
+            <div className={css.flex}>{movies.results.map(movie => <MoviesGenre key={movie.id} genre={movie}/>)}</div>}
             <div className={css.buttonFlex}>
                 <button className={css.button} onClick={back}>back</button>
                 <div className={css.flex}>
